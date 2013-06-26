@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<!DOCTYPE facelet-taglib PUBLIC
+  "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
+  "http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
+<facelet-taglib>
+	<namespace>http://www.xfacelets.org</namespace>
+	<tag>
+		<tag-name>calendar</tag-name>
+		<source>components/input/calendar.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>form</tag-name>
+		<source>components/input/form.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputSecret</tag-name>
+		<source>components/input/inputSecret.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputText</tag-name>
+		<source>components/input/inputText.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextarea</tag-name>
+		<source>components/input/inputTextarea.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputMask</tag-name>
+		<source>components/input/inputMask.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextCep</tag-name>
+		<source>components/input/inputTextCep.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextCpf</tag-name>
+		<source>components/input/inputTextCpf.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextCnpj</tag-name>
+		<source>components/input/inputTextCnpj.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextEmail</tag-name>
+		<source>components/input/inputTextEmail.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextDdd</tag-name>
+		<source>components/input/inputTextDdd.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>inputTextTelefone</tag-name>
+		<source>components/input/inputTextTelefone.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>outputText</tag-name>
+		<source>components/output/outputText.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>div</tag-name>
+		<source>components/html/div.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>field</tag-name>
+		<source>components/template/field.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>fragment</tag-name>
+		<source>components/template/fragment.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>messages</tag-name>
+		<source>components/output/messages.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectBooleanCheckbox</tag-name>
+		<source>components/select/selectBooleanCheckbox.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectManyCheckbox</tag-name>
+		<source>components/select/selectManyCheckbox.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectManyListbox</tag-name>
+		<source>components/select/selectManyListbox.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectManyMenu</tag-name>
+		<source>components/select/selectManyMenu.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectOneListbox</tag-name>
+		<source>components/select/selectOneListbox.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectOneMenu</tag-name>
+		<source>components/select/selectOneMenu.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>selectOneRadio</tag-name>
+		<source>components/select/selectOneRadio.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>dataTable</tag-name>
+		<source>components/datatable/dataTable.xhtml</source>
+	</tag>
+	<tag>
+		<tag-name>column</tag-name>
+		<source>components/datatable/column.xhtml</source>
+	</tag>
+	<function>
+		<function-name>defaultValue</function-name>
+		<function-class>org.xfacelets.functions.ObjectFunctions</function-class>
+		<function-signature>java.lang.Object defaultValue(java.lang.Object, java.lang.Object)</function-signature>
+	</function>
+	<function>
+		<function-name>concat</function-name>
+		<function-class>org.xfacelets.functions.StringFunctions</function-class>
+		<function-signature>java.lang.String concat(java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<function-name>isNull</function-name>
+		<function-class>org.xfacelets.functions.ObjectFunctions</function-class>
+		<function-signature>boolean isNull(java.lang.Object)</function-signature>
+	</function>
+	<function>
+		<function-name>isNotNull</function-name>
+		<function-class>org.xfacelets.functions.ObjectFunctions</function-class>
+		<function-signature>boolean isNotNull(java.lang.Object)</function-signature>
+	</function>
+	<function>
+		<function-name>isString</function-name>
+		<function-class>org.xfacelets.functions.StringFunctions</function-class>
+		<function-signature>boolean isString(java.lang.Object)</function-signature>
+	</function>
+	<function>
+		<function-name>contextPath</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>java.lang.String contextPath()</function-signature>
+	</function>
+	<function>
+		<function-name>isMessages</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean isMessages()</function-signature>
+	</function>
+	<function>
+		<function-name>isMessageError</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean isMessageError()</function-signature>
+	</function>
+	<function>
+		<function-name>isMessageInfo</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean isMessageInfo()</function-signature>
+	</function>
+	<function>
+		<function-name>isMessageWarn</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean isMessageWarn()</function-signature>
+	</function>
+	<function>
+		<function-name>isMessagesForClientId</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean isMessagesForClientId(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<function-name>isClientIdsWithMessages</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean isClientIdsWithMessages()</function-signature>
+	</function>
+	<function>
+		<function-name>getMessageForClientId</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean getMessageForClientId(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<function-name>hasMessagesGlobal</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean hasMessagesGlobal()</function-signature>
+	</function>
+	<function>
+		<function-name>hasMessageWithClientIds</function-name>
+		<function-class>org.xfacelets.functions.FacesContextFunctions</function-class>
+		<function-signature>boolean hasMessageWithClientIds(java.lang.String)</function-signature>
+	</function>
+	
+</facelet-taglib>

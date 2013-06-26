@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:x="http://www.xfacelets.org">
+<ui:composition>
+	<x:inputMask id="#{id}" label="#{x:defaultValue(label,'DDD')}" value="#{value}" title="#{x:defaultValue(title,'Informe o DDD')}"
+	                 mask="#{x:defaultValue(mask, '99')}" maxlength="#{x:defaultValue(maxlength,2)}" readonly="#{readonly}" disabled="#{readonly}" autocomplete="#{x:defaultValue(autocomplete,'off')}" style="#{style}" styleClass="#{styleClass}"
+	                 accesskey="#{accesskey}" rendered="#{x:defaultValue(rendered,true)}">
+	  <ui:insert />
+	</x:inputMask>
+</ui:composition>
+</html>

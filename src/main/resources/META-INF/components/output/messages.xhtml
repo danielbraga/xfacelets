@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:x="http://www.xfacelets.org">
+<ui:component id="#{id}" rendered="#{x:defaultValue(rendered,true)}">
+    <x:fragment rendered="#{x:isMessages()}">
+	    <div class="alert #{x:isMessageInfo() ? 'alert-info' : ''} #{x:isMessageWarn() ? 'alert-block' : ''} #{x:isMessageError() ? 'alert-error' : ''}">
+	      <a class="close" data-dismiss="alert" title="fechar" href="#">×</a>
+	      <h:messages globalOnly="true">
+	        <ui:insert />
+	      </h:messages>
+	    </div>
+    </x:fragment>
+</ui:component>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:x="http://www.xfacelets.org">
+<ui:component id="#{id}" rendered="#{x:defaultValue(rendered,true)}">
+	<x:field>
+		<ui:define name="value">
+		    <p:calendar id="#{id}Component" value="#{value}" label="#{label}" required="#{required}" lang="#{x:defaultValue(lang,'pt_BR')}" locale="#{x:defaultValue(locale,'pt_BR')}" pattern="#{x:defaultValue(pattern,'dd/MM/yyyy')}" style="#{style}" styleClass="#{styleClass}">
+				<ui:insert />
+		    </p:calendar>
+		</ui:define>
+	</x:field>
+</ui:component>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:x="http://www.xfacelets.org">
+<ui:component id="#{id}" rendered="#{x:defaultValue(rendered,true)}">
+	<x:field>
+		<ui:define name="value">
+		    <p:inputMask id="#{id}Component" label="#{label}" value="#{value}" required="#{required}" maxlength="#{x:defaultValue(maxlength,20)}"
+		                 title="#{title}" readonly="#{readonly}" disabled="#{readonly}" autocomplete="#{x:defaultValue(autocomplete,'off')}" style="#{style}" styleClass="#{styleClass}"
+		                 accesskey="#{accesskey}" mask="#{mask}">
+		        <f:attribute name="binding" value="#{binding}" />
+				<f:converter converterId="org.xfacelets.converter.removeMask" />
+				<ui:insert />
+			</p:inputMask>			
+		</ui:define>
+	</x:field>
+</ui:component>
+</html>

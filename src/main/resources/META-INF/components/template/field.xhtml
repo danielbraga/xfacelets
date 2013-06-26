@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC 
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:x="http://www.xfacelets.org">
+<ui:composition>
+  <ui:param name="idComponentInternal" value="#{id}Component" />
+  <div style="#{x:defaultValue(fieldStyle,'')}" class="control-group #{x:isMessagesForClientId(idComponentInternal) ? 'error' : ''} #{x:defaultValue(fieldStyleClass,'')}">
+    <x:fragment rendered="#{not empty label}">
+      <label id="#{id}Label" for="#{id}Component" accesskey="#{accesskey}" class="control-label">
+        <x:fragment rendered="#{x:defaultValue(required,false)}">
+        <span title="Required field" class="required">*</span>
+        </x:fragment>
+        <h:outputText value="#{label}" />
+      </label>
+    </x:fragment>
+    <div style="#{x:defaultValue(fieldComponentStyle,'')}" class="controls #{x:defaultValue(fieldComponentStyleClass,'')}">
+      <div class="#{(not empty iconStyleClass) ? 'input-prepend' : ''}">
+        <x:fragment rendered="#{not empty iconStyleClass}">
+        <span class="add-on"><i class="#{iconStyleClass}"></i></span>
+        </x:fragment>
+        <ui:insert name="value" />
+      </div>
+      <x:fragment rendered="#{x:isMessagesForClientId(idComponentInternal)}">
+        <span class="help-block">
+          <h:message for="#{id}Component"/>
+        </span>
+      </x:fragment>
+    </div>
+  </div>
+</ui:composition>
+</html>
